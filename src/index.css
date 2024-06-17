@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #111827;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.bg-image{
+    background-image: linear-gradient(#020111a9, #020111a9), url("./assets/background.jpg") ;
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-size: cover;
+    width: 100%;
+}
+
+
+
+/* Portfolio Overlay */
+.overlay-box{
+  position: relative;
+}
+.overlay{
+  background-color: #111827cb;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  display:none;
+  overflow: hidden;
+  /* transition: left 2s; */
+  justify-content: center;
+  align-items: center;
+
+}
+.overlay-box:hover .overlay{
+  display: flex;
+}
